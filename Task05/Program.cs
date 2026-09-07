@@ -42,6 +42,94 @@
             // Console.WriteLine(TestDefensiveCode()); 
 
 
+            #region Problem3 
+            //int? number = null;
+
+            ////  null-coalescing operator
+            //int DefaultValue = number ?? 0;
+            //Console.WriteLine($"Value using ?? : {DefaultValue}");
+
+            ////  HasValue
+            //if (number.HasValue)
+            //{
+            //    Console.WriteLine("Number have value");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Number is null");
+            //}
+
+            ////  Value
+            //number = 10;
+
+            //if (number.HasValue)
+            //{
+            //    Console.WriteLine($"Value property : {number.Value}");
+            //} 
+            #endregion
+
+
+            #region Problem4 
+            //try
+            //{
+            //    int[] arr = { 1, 2, 3, 4, 5 };
+            //    Console.WriteLine(arr[5]);
+            //}
+            //catch(IndexOutOfRangeException ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //} 
+            #endregion
+
+            #region Problem5  
+            //int[,] arr = new int[3,3];
+            //for (int i = 0; i < arr.GetLength(0); i++)
+            //{
+            //    Console.WriteLine($"Enter the value for row number {i+1}");
+            //    for (int j = 0; j < arr.GetLength(1); j++)
+            //    {
+            //        Console.WriteLine($"Enter values of [{i},{j}]");
+            //        arr[i, j] = Convert.ToInt32(Console.ReadLine());
+
+            //    }
+            //}
+            //Console.Clear();    
+            //Console.WriteLine("====================");
+            //for (int i = 0; i < arr.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < arr.GetLength(1); j++)
+            //    {
+            //        Console.Write(arr[i, j] + " ");
+
+
+            //    }
+            //    Console.WriteLine();
+            //}
+            //Console.WriteLine("Array 3x3");
+            //Console.WriteLine("====================");
+            //int sum = 0;    
+            //for (int i = 0; i < arr.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < arr.GetLength(1); j++)
+            //    {
+            //       sum += arr[i, j];
+            //    }
+            //    Console.WriteLine($"Sum Row{i+1} = {sum}");
+            //    Console.WriteLine();
+            //    sum = 0;
+            //}
+            //Console.WriteLine("--------------------------");
+            //for (int i = 0; i < arr.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < arr.GetLength(1); j++)
+            //    {
+            //        sum += arr[j, i];
+            //    }
+            //    Console.WriteLine($"Sum Column{i + 1} = {sum}");
+            //    Console.WriteLine();
+            //    sum = 0;
+            //} 
+            #endregion
 
             Console.ReadKey();
         }
