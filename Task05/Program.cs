@@ -1,9 +1,12 @@
-﻿namespace Task05
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Task05
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            #region Part01 
             #region Problem1  
             //try
             //{
@@ -265,8 +268,101 @@
             //Console.WriteLine($"Sum Element in Array = {SumArray(arr)}");
             //Console.WriteLine($"Sum Element in Array = {SumArray(4, 5, 6)}"); 
             #endregion
+            #endregion
+
+            #region Part02  
+            //Program to Print Numbers in a Range 
+            //int number;
+            //bool flag;
+            //do
+            //{
+            //    Console.Write("insert a positive integer number: ");
+            //    flag = int.TryParse(Console.ReadLine(), out number);
+
+            //}
+            //while (!flag || number <= 0);
+
+            //Console.WriteLine($"input: {number}");
+            //for (int i = 1; i <= number; i++)
+            //{
+            //    Console.Write($"{i} , ");
+
+            //}
+
+            //Program to Display Multiplication Table 
+            //int number;
+            //bool flag;
+            //do
+            //{
+            //    Console.Write("insert integer number: ");
+            //    flag = int.TryParse(Console.ReadLine(), out number);
+
+            //}
+            //while (!flag);
+
+            //Console.WriteLine($"input: {number}");
+            //for (int i = number; i <= (number * 12); i = i + number)
+            //{
+            //    Console.Write($"{i} , ");
+
+            //}
+
+            //Program to List Even Numbers 
+            //int number;
+            //bool flag;
+            //do
+            //{
+            //    Console.Write("insert number: ");
+            //    flag = int.TryParse(Console.ReadLine(), out number);
+
+            //}
+            //while (!flag);
+
+            //Console.WriteLine($"input: {number}");
+            //for (int i = 1; i <=number; i++)
+            //{
+            //    if(i % 2 == 0)
+            //        Console.Write($"{i},");
+            //}
+
+            //Program to Compute Exponentiation 
+            //int FirstNumber;
+            //int SecondNumber;
+            //bool flag;
+            //do
+            //{
+            //    Console.Write("insert FirstNumber: ");
+            //    flag = int.TryParse(Console.ReadLine(), out FirstNumber);
+            //    Console.Write("insert SecondNumber: ");
+            //    flag = int.TryParse(Console.ReadLine(), out SecondNumber);
+
+            //}
+            //while (!flag);
+            //int result = 1;
+            //Console.WriteLine($"input: {FirstNumber} , {SecondNumber}");
+            //for (int i = 1; i <= SecondNumber; i++)
+            //{
+            //    result = result * FirstNumber;
+            //}
+            //Console.Write($"{FirstNumber} ^ {SecondNumber} = {result}");
+
+            //Program to Reverse a Text String 
+
+            //Console.Write("enter a string: ");
+            //string? input = Console.ReadLine();
+            //Console.WriteLine($"input: {input}");
+            //for (int i = input.Length - 1; i >= 0; i--)
+            //{
+            //    Console.Write(input[i]);
+            //}
+
+            #endregion
+
+
             Console.ReadKey();
         }
+
+        #region Part01 
 
         //public static void TestDefensiveCode()
         //{
@@ -340,8 +436,11 @@
                 sum += arr[i];
             }
             return sum;
-        } 
+        }
         #endregion
+
+        #endregion
+
 
     }
 }
