@@ -39,6 +39,7 @@
             //}
             #endregion
 
+            // problem2
             // Console.WriteLine(TestDefensiveCode()); 
 
 
@@ -131,8 +132,142 @@
             //} 
             #endregion
 
+            #region Problem6  
+            //int[][] arr = new int[3][];
+
+            //arr[0] = new int[3];
+            //arr[1] = new int[5];
+            //arr[2] = new int[2];
+
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    Console.WriteLine($"Enter values for row number {i + 1}");
+
+            //    for (int j = 0; j < arr[i].Length; j++)
+            //    {
+            //        Console.Write($"Enter value [{i},{j}]: ");
+            //        arr[i][j] = Convert.ToInt32(Console.ReadLine());
+            //    }
+            //}
+
+            //Console.Clear();
+
+            //Console.WriteLine("====================");
+
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    for (int j = 0; j < arr[i].Length; j++)
+            //    {
+            //        Console.Write(arr[i][j] + " ");
+            //    }
+
+            //    Console.WriteLine();
+            //}
+
+            //Console.WriteLine("===================="); 
+            #endregion
+
+            #region Problem7  
+            // my solution
+            //Console.Write("enter your string:  ");
+            //string? input = Console.ReadLine();
+            //if (string.IsNullOrEmpty(input))
+            //{
+            //    Console.WriteLine("input is empty ");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Your input is : {input}");
+            //}
+
+            //-----------------------------------
+            // gpt
+            //Console.Write("Enter your input: ");
+
+            //string? input = Console.ReadLine();
+
+            //string? message;
+
+            //if (input == "yes")
+            //{
+            //    message = "Hello";
+            //}
+            //else
+            //{
+            //    message = null;
+            //}
+
+            //if (message != null)
+            //{
+            //    Console.WriteLine(message!);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("message is null");
+            //}
+
+            #endregion
+
+            #region Problem8  
+            //// Boxing
+            //int X = 10;
+            //object O1 = X;
+
+            //// Unboxing
+            //int Y = (int)O1;
+
+            //// Invalid Cast
+            //try
+            //{
+            //    double Z = (double)O1;
+            //    Console.WriteLine(Z);
+            //}
+            //catch (InvalidCastException ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //} 
+            #endregion
+
+            #region Problem9   
+            //int Sum, Multiply;
+            //SumAndMultiply(3, 3 , out Sum , out Multiply);
+            //Console.WriteLine($"Sum = {Sum}");
+            //Console.WriteLine($"Multiply = {Multiply}"); 
+            #endregion
+
+            //Problem10
+            //PrintString("Hello World"  , Count:3);
+
+            #region Problem11  
+            //int[]? arr = null;
+            //Console.WriteLine($"{arr?.Length}"); 
+            #endregion
+
+            #region Problem12    
+            //Console.Write("Enter Day: ");
+            //string day = Console.ReadLine();
+            //int number = day switch
+            //{
+            //    "Saturday" => 1,
+            //    "Sunday" => 2,
+            //    "Monday" => 3,
+            //    "Tuesday" => 4,
+            //    "Wednesday" => 5,
+            //    "Thursday" => 6,
+            //    "Friday" => 7,
+
+            //};
+            //Console.WriteLine($"{day} DayNumber {number}"); 
+            #endregion
+
+            #region Problem13
+            //int[] arr = { 1, 2, 3 };
+            //Console.WriteLine($"Sum Element in Array = {SumArray(arr)}");
+            //Console.WriteLine($"Sum Element in Array = {SumArray(4, 5, 6)}"); 
+            #endregion
             Console.ReadKey();
         }
+
         //public static void TestDefensiveCode()
         //{
         //    int X, Y, Z;
@@ -155,25 +290,57 @@
         //        arr[69] = 90;
         //}
 
-        #region Priblem2  
-        //public static int TestDefensiveCode()
-        //{
+        #region Problem2  
+        public static int TestDefensiveCode()
+        {
 
-        //    int X, Y, Z;
-        //    do
-        //    {
-        //        Console.Write("Enter first Number : ");
-        //    }
-        //    while (!int.TryParse(Console.ReadLine(), out X) || X <= 0);
-        //    do
-        //    {
-        //        Console.Write("Enter Second Number : ");
-        //    }
-        //    while (!int.TryParse(Console.ReadLine(), out Y) || Y <= 1);
+            int X, Y, Z;
+            do
+            {
+                Console.Write("Enter first Number : ");
+            }
+            while (!int.TryParse(Console.ReadLine(), out X) || X <= 0);
+            do
+            {
+                Console.Write("Enter Second Number : ");
+            }
+            while (!int.TryParse(Console.ReadLine(), out Y) || Y <= 1);
 
-        //   return Z = X / Y;
+            return Z = X / Y;
 
-        //} 
+        }
+        #endregion
+
+        #region Problem9
+        public static void SumAndMultiply(int num1, int num2, out int sum, out int multiply)
+        {
+            sum = num1 + num2;
+
+            multiply = num1 * num2;
+
+        }
+        #endregion
+
+        #region Problem10
+        public static void PrintString(string sString, int Count = 5)
+        {
+            for (int i = 1; i <= Count; i++)
+            {
+                Console.WriteLine(sString);
+            }
+        }
+        #endregion
+
+        #region Problem13
+        public static int SumArray(params int[] arr)
+        {
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+            }
+            return sum;
+        } 
         #endregion
 
     }
